@@ -7,11 +7,20 @@ ul li {
   list-style: none;
 }
 
+img {
+  cursor: pointer;
+}
+
+.top_navbar_btn i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 #top_navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 75px;
   width: 100%;
 }
 
@@ -50,21 +59,23 @@ ul li {
   display: flex;
   width: 60%;
   height: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nav_bottom_navigation {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  margin-left: 30px;
+.nav_bottom_navigation ul li {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.nav_bottom_navigation ul li.text-color {
+  color: #fd7e14;
 }
 
 .banner {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .banner_logo {
@@ -110,7 +121,6 @@ ul li {
 .your_details {
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
   margin-top: 30px;
 }
 
@@ -147,7 +157,6 @@ ul li {
 .your_pertner_details {
   display: flex;
   justify-content: space-evenly;
-  width: 95%;
   margin-top: 30px;
   padding-bottom: 60px;
 }
@@ -157,7 +166,7 @@ ul li {
 }
 
 #name {
-  padding: 10px;
+  padding: 7px 10px;
   width: 300px;
   color: #746879;
 }
@@ -182,21 +191,18 @@ ul li {
   color: #746879;
 }
 
-.percentage {
+.scale {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  height: 50px;
   align-items: center;
 }
 
-.scale {
-  display: flex;
-  height: 100px;
-  align-items: center;
+.scale label {
+  width: 50%;
 }
 
 .scale input[type="text"] {
-  padding: 15px 5px;
+  padding: 8px 5px;
 }
 
 #calculate {
@@ -211,7 +217,6 @@ ul li {
 }
 
 .breaf_dec {
-  width: 90%;
   text-align: center;
   margin-left: 40px;
   text-align: justify;
@@ -225,8 +230,8 @@ ul li {
 .faq select {
   padding: 10px;
   font-weight: bold;
-  width: 95%;
   margin: 10px;
+  width: 100%;
 }
 
 .hor_heading {
@@ -243,13 +248,15 @@ ul li {
 
 .box {
   width: 165px;
-  height: 180px;
+  min-height: 180px;
   border: 1px solid #c8c8c8;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
+}
+
+.box img {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .box:hover {
@@ -266,10 +273,6 @@ ul li {
   justify-content: space-evenly;
 }
 
-#footer1 {
-  background-color: #2c2d2e;
-}
-
 #footer1 ul {
   display: flex;
   justify-content: space-evenly;
@@ -277,4 +280,15 @@ ul li {
 .list1 {
   display: flex;
   justify-content: space-evenly;
+}
+
+.footer {
+  background-color: #2c2d2e;
+  padding-top: 10px;
+}
+
+#footer_list li {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
 }
